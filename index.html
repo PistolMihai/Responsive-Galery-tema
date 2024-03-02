@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Gallery</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      h1 {
+        margin-bottom: 20px;
+      }
+      .text {
+        margin-top: 40px;
+      }
+      .wrapper {
+        max-width: 1110px;
+        margin: auto;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: space-between;
+        gap: 50px;
+      }
+      .grid-element {
+        text-align: center;
+        background-color: rgba(211, 211, 211, 0.286);
+        border-radius: 10px;
+        width: 100%;
+      }
+
+      .grid-element img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background: rgba(0, 89, 255, 0.529);
+        width: 100%;
+      }
+      .grid-element p {
+        padding-bottom: 5px;
+      }
+      @media screen and (max-width: 1158px) {
+        .wrapper {
+          margin: 0 24px;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      @media screen and (max-width: 410px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+        h1 {
+          text-align: center;
+        }
+        .text {
+          text-align: center;
+        }
+        .grid-element {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Gallery Heading</h1>
+      <div class="grid">
+        <div class="grid-element">
+          <img src="/images/placeholder-image.png" alt="image" />
+          <p class="image__title">Image Title</p>
+        </div>
+        <div class="grid-element">
+          <img src="/images/placeholder-image.png" alt="image" />
+          <p class="image__title">Image Title</p>
+        </div>
+        <div class="grid-element">
+          <img src="/images/placeholder-image.png" alt="image" />
+          <p class="image__title">Image Title</p>
+        </div>
+        <div class="grid-element">
+          <img src="/images/placeholder-image.png" alt="image" />
+          <p class="image__title">Image Title</p>
+        </div>
+        <div class="grid-element">
+          <img src="/images/placeholder-image.png" alt="image" />
+          <p class="image__title">Image Title</p>
+        </div>
+        <div class="grid-element">
+          <img src="/images/placeholder-image.png" alt="image" />
+          <p class="image__title">Image Title</p>
+        </div>
+        <div class="grid-element">
+          <img src="/images/placeholder-image.png" alt="image" />
+          <p class="image__title">Image Title</p>
+        </div>
+        <div class="grid-element">
+          <img src="/images/placeholder-image.png" alt="image" />
+          <p class="image__title">Image Title</p>
+        </div>
+        <div class="grid-element">
+          <img src="/images/placeholder-image.png" alt="image" />
+          <p class="image__title">Image Title</p>
+        </div>
+        <div class="grid-element">
+          <img src="/images/placeholder-image.png" alt="image" />
+          <p class="image__title">Image Title</p>
+        </div>
+      </div>
+      <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eius earum
+        corrupti! Ipsam delectus cupiditate obcaecati deleniti omnis itaque
+        officia quasi fuga sit quia! Soluta excepturi obcaecati nisi blanditiis
+        velit rem facilis itaque consequuntur veritatis dolore culpa eum
+        voluptates tempore ratione explicabo, non exercitationem doloremque
+        inventore? Temporibus perspiciatis amet quasi magni a eos dolorum
+        distinctio delectus nihil quibusdam ab excepturi exercitationem voluptas
+        corrupti animi itaque natus soluta quo, repellat quis suscipit expedita
+        incidunt quod. Ipsa eligendi perferendis laudantium! Officiis sint
+        provident placeat facilis fugit suscipit, at consequuntur accusantium
+        dolor amet eligendi et nulla, unde nostrum, sapiente similique tenetur?
+        Fuga, eaque?
+      </p>
+    </div>
+  </body>
+</html>
